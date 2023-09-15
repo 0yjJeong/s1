@@ -9,11 +9,12 @@ const fontSize = {
     sm: '0.8rem',
     base: '1rem',
     md: '1.4rem',
-    lg: '3rem',
+    lg: '4rem',
 }
 
 const color = {
     white: '#FFFFFF',
+    gray: '#808080',
 
     orange00: '#FDE4C6',
     orange01: '#FFCC9F',
@@ -26,8 +27,24 @@ const color = {
     blue02: '#172A5A',
 }
 
+const theme = {
+    orange: {
+        title: color.white,
+        sub: color.orange00,
+    },
+    'orange-reverse': {
+        title: color.orange03,
+        sub: color.gray,
+    },
+    blue: {
+        title: color.blue01,
+        sub: color.blue00,
+    },
+}
+
 export default {
     windowSize,
     fontSize,
     color,
+    theme,
 }

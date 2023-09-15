@@ -8,6 +8,7 @@ export const Wrapper = Styled.div`
     max-width: 1500px;
     margin: auto;
     z-index: 10;
+    height: 100%;
 `
 
 const Section = Styled.div<SectionProps>`

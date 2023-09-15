@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         font-family: 'Noto Sans KR', sans-serif;
+
+        @media (max-width: ${(props) => props.theme.windowSize['tablet']}px) {
+            font-size: 12px;
+        }
     }
 
     html, body {
