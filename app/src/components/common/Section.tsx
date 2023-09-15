@@ -36,6 +36,10 @@ const Section = Styled.div<SectionProps>`
                     & > div {
                         width: 100%;
                     }
+
+                    & > div:first-child {
+                        flex: 0;
+                    }
                 }
             `}
 

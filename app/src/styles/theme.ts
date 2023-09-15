@@ -1,14 +1,14 @@
 const windowSize = {
     mobile: 600,
     tablet: 768,
-    desktops: 1042,
+    laptop: 1042,
 }
 
 const fontSize = {
-    xs: '0.5rem',
-    sm: '0.8rem',
-    base: '1rem',
-    md: '1.4rem',
+    xs: '0.8rem',
+    sm: '1rem',
+    base: '1.3em',
+    md: '2.5rem',
     lg: '4rem',
 }
 
@@ -27,6 +27,7 @@ const color = {
     blue00: '#ACB5BD',
     blue01: '#545F7B',
     blue02: '#172A5A',
+    blue03: '#061B53',
 }
 
 const theme = {
@@ -39,8 +40,8 @@ const theme = {
         sub: color.lightGray,
     },
     blue: {
-        title: color.blue01,
-        sub: color.blue00,
+        title: color.blue00,
+        sub: color.blue01,
     },
 }
 

@@ -10,7 +10,7 @@ const Container = Styled.div`
     right: 0;
     left: 0;
     height: 100px;
-    z-index: 100;
+    z-index: 1000;
 
     .wrapper {
         height: 100%;

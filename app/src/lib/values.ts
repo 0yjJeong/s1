@@ -13,39 +13,39 @@ export const values = {
         {
             icon: 'resource/slide-icon-1.png',
             category: '세콤/CCTV',
-            title: '제목1',
+            title: '시스템경비',
             description: '언제나 여러분의 곁에서 안전을 지키는 세콤에 대해 알아보세요',
         },
         {
             icon: 'resource/slide-icon-2.png',
             category: '정보보안',
-            title: '제목2',
+            title: 'IT자산보호',
             description: '정보보호 정책위반 또는 인가되지 않은 침입으로부터 시스템과 네트워크',
         },
         {
             icon: 'resource/slide-icon-3.png',
             category: '통합보안솔루션',
-            title: '제목3',
+            title: '맞춤설계보안',
             description:
                 '최고의 보안은 맞춤 설계된 보안입니다.에스원만이 보유한 역량으로 빈틈없는 보안서비스를 약속합니다.',
         },
         {
             icon: 'resource/slide-icon-4.png',
             category: '차량운행관리',
-            title: '제목4',
+            title: '차량관제 시스템',
             description: '차량의 운행정보를 분석하여 효율적인 차량관리를 지원하는 시스템입니다.',
         },
         {
             icon: 'resource/slide-icon-5.png',
             category: '부동산종합서비스',
-            title: '제목5',
+            title: '블루에셋',
             description:
                 '블루에셋은 건물의 생애주기에 맞춰 다양한 서비스를 제공해 드리는 부동산 종합서비스 브랜드입니다',
         },
         {
             icon: 'resource/slide-icon-6.png',
             category: '안심모바일',
-            title: '제목6',
+            title: ' 이동통신 서비스',
             description: '안심모바일은 에스원의 이동통신 서비스 브랜드로자녀, 어르신께서 이용하시면 더욱 좋습니다.',
         },
     ],

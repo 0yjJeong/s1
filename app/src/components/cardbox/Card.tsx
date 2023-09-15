@@ -18,7 +18,7 @@ const Card = ({ index, icon, category }: CardProps) => {
                         <h1>{category}</h1>
                     </Left>
                     <Right>
-                        <span>더보기</span>
+                        <a href="#">더보기</a>
                     </Right>
                 </div>
             </Inner>
@@ -45,13 +45,13 @@ const Outer = Styled.li<{ index: number }>`
     position: absolute;
     width: 100%;
     bottom: -4px;
-    // animation: ${flip} 2s ease-in-out
+    animation: ${flip} 2s ease-in-out
     ${(props) => (props.index + 1) * 8}s;
     animation-fill-mode: forwards;
 
     ${(props) => props.index === 5 && 'animation: none'};
 
-    z-index: ${(props) => props.index * -1 + 10};
+    z-index: ${(props) => 100 - (props.index + 2) * 10};
 `
 
 const Inner = Styled.div`
@@ -59,6 +59,10 @@ const Inner = Styled.div`
     top: 0;
     width: 100%;
     padding: 4rem;
+
+    @media (max-width: 1250px) {
+        padding: 3rem;
+    }
 
     & > div {
         display: flex;
@@ -81,6 +85,11 @@ const Left = Styled.div`
         padding: 0;
         margin: 0;
         font-size: ${(props) => props.theme.fontSize.base};
+        color: ${(props) => props.theme.color['blue01']};
+
+        @media (max-width: 1250px) {
+            font-size: ${(props) => props.theme.fontSize.sm};
+        }
     }
 `
 
@@ -88,8 +97,21 @@ const Right = Styled.div`
     padding: 0;
     margin: 0;
     font-size: ${(props) => props.theme.fontSize.xs};
-    width: 100%;
     text-align: right;
+
+    a {
+        text-decoration: none;
+        color: ${(props) => props.theme.color['blue00']};
+        border: 1px solid ${(props) => props.theme.color['blue00']};
+        border-radius: 50px;
+        padding: 3px 6px;
+        white-space: nowrap;
+
+        &:hover {
+            color: ${(props) => props.theme.color['blue01']};
+            background: rgba(172, 181, 189, .3);
+        }
+    }
 `
 
 export default Card
