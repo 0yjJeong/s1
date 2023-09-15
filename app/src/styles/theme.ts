@@ -14,7 +14,9 @@ const fontSize = {
 
 const color = {
     white: '#FFFFFF',
-    gray: '#808080',
+
+    lightGray: '#808080',
+    darkGray: '#333333',
 
     orange00: '#FDE4C6',
     orange01: '#FFCC9F',
@@ -34,7 +36,7 @@ const theme = {
     },
     'orange-reverse': {
         title: color.orange03,
-        sub: color.gray,
+        sub: color.lightGray,
     },
     blue: {
         title: color.blue01,
