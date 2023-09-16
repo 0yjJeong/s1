@@ -9,7 +9,7 @@ const Scaffolding = Styled.div<ScaffoldingProps>`
     ${(props) => {
         return `
             background: ${props.background};
-            height: 30px;
+            height: 100px;
 
             &:after {
                 content: "";

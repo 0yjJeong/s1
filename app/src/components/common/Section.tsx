@@ -9,7 +9,6 @@ export const Wrapper = Styled.div`
     margin: auto;
     z-index: 10;
     height: 100%;
-    padding-top: 100px;
 `
 
 const Section = Styled.div<SectionProps>`

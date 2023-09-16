@@ -1,0 +1,37 @@
+.react-multi-carousel-list {
+    overflow: initial;
+}
+
+.dot-list-style {
+    bottom: 0;
+}
+
+.dot-list-style li {
+    position: relative;
+}
+
+.dot-list-style li button {
+    background: #ffffff;
+    width: 15px;
+    height: 15px;
+    border-color: #acb5bd;
+}
+
+.react-multi-carousel-dot--active button {
+    background: #172a5a !important;
+    border: none !important;
+}
+
+.dot-list-style li button::after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #acb5bd;
+}
+
+.dot-list-style li:last-child button::after {
+    width: 0;
+}

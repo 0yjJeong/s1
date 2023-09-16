@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import Styled from 'styled-components'
 
 const Container = Styled.div<{ ref: React.ForwardedRef<unknown> }>`
-    height: calc(100vh + 100px);
+    height: calc(100vh + 300px);
     position: relative;
     overflow: hidden;
 `
