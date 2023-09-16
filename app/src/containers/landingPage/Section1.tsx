@@ -10,7 +10,7 @@ export default function Section1({ inView }: SectionProps) {
     const { color } = useTheme()
 
     const textFragment = (
-        <div style={{ zIndex: 10, display: 'flex', flexDirection: 'column', gap: '5rem', alignItems: 'flex-start' }}>
+        <div className="text first">
             <Text
                 title="소중한 그대의 일상을 지킨다는 의미"
                 subTitle="신뢰와 혁신으로 더 나은 보안을 선사하는 파트너"
@@ -26,12 +26,14 @@ export default function Section1({ inView }: SectionProps) {
         </div>
     )
 
-    const screenFragment = <div className="screen" style={{ background: color['orange03'] }}></div>
+    const screenFragment = (
+        <div className="screen" style={{ background: color['orange03'], zIndex: -1, borderRadius: 0 }}></div>
+    )
 
     return (
         <Section direction="horizontal">
             <Wrapper>
-                <div className="content">
+                <div className="content" style={{ width: '100%' }}>
                     {textFragment}
                     {cycleFragment}
                 </div>

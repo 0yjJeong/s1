@@ -16,7 +16,7 @@ export default function Section2({ inView }: SectionProps) {
     }
 
     const textFragment = (
-        <div style={{ zIndex: 10, display: 'flex', flexDirection: 'column', gap: '5rem', alignItems: 'flex-start' }}>
+        <div className="text">
             <Text
                 title="고객님들을 위한 세콤의 통합 서비스"
                 subTitle="세콤이 제공하는 서비스로 어떤 것들이 있는지 알아보세요"
@@ -41,7 +41,7 @@ export default function Section2({ inView }: SectionProps) {
                 <TimerProvider>
                     <Section direction="horizontal">
                         <Wrapper>
-                            <div className="content">
+                            <div className="content" style={{ height: 'auto' }}>
                                 {cardboxFragment}
                                 {textFragment}
                             </div>

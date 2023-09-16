@@ -24,7 +24,7 @@ const Graph = ({}: GraphProps) => {
 }
 
 const Positioner = Styled.div`
-    height: 100vh;
+    height: 100%;
     position: relative;
 
     @media (max-width: ${(props) => props.theme.windowSize['tablet']}px) {

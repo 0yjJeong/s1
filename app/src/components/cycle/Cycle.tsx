@@ -37,9 +37,13 @@ const Cycle = ({}: CycleProps) => {
 }
 
 const Container = Styled.div<{ divisor?: number }>`
-    position: relative;
+    position: absolute;
     height: calc(100vw / 1.5);
-    margin-left: 50%;
+    margin-left: 30%;
+
+    @media (max-width: ${(props) => props.theme.windowSize['tablet']}px) {
+        margin-left: 100%;
+    }
 `
 
 const CircleWrapper = Styled.div`

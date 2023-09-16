@@ -172,7 +172,7 @@ const Header = ({}: HeaderProps) => {
                     </MobileRight>
                 </div>
             </Container>
-            <div>
+            <div style={{ overflow: 'hidden' }}>
                 <Outlet />
             </div>
         </div>

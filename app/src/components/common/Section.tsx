@@ -5,42 +5,47 @@ type SectionProps = {
 }
 
 export const Wrapper = Styled.div`
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1500px;
     margin: auto;
-    z-index: 10;
-    height: 100%;
 `
 
 const Section = Styled.div<SectionProps>`
-    height: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
 
     .content {
-        display: flex;
         height: 100%;
-        align-items: center;
+        display: flex;
+        gap: 4rem;
+        flex-direction: row;
 
-        ${(props) =>
-            props.direction === 'horizontal' &&
-            `
-                flex-direction: row;
+        & > .text {
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            align-items: flex-start;
+            justify-content: center;
+        }
 
-                & > div {
-                    flex: 1 1 auto;
-                    width: 0;
-                }
+        @media (max-width: ${(props) => props.theme.windowSize['tablet']}px){
+            flex-direction: column;
 
-                @media (max-width: ${props.theme.windowSize['tablet']}px) {
-                    flex-direction: column;
+            & > .text {
+                padding: 40px;
+            }
 
-                    & > div {
-                        width: 100%;
-                    }
-
-                    & > div:first-child {
-                        flex: 0;
-                    }
-                }
-            `}
+            & > .first {
+                margin-top: 200px;
+            }
+        }
 
         ${(props) => props.direction === 'vertical' && 'flex-direction: column'}
     }    
@@ -51,7 +56,9 @@ const Section = Styled.div<SectionProps>`
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: -1;
+        z-index: 0;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
     }
 `
 
