@@ -1,8 +1,14 @@
 {
+    "homepage": "https://smalldoodles.github.io/s1/",
     "name": "s1-redesign",
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "start": "cd app && npm start"
+        "start": "cd app && npm start",
+       
+        "deploy": "gh-pages -d ./app/build"
+    },
+    "dependencies": {
+        "gh-pages": "^6.0.0"
     }
 }
