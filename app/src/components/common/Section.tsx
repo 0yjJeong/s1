@@ -13,7 +13,7 @@ export const Wrapper = Styled.div`
     margin: auto;
 `
 
-const Section = Styled.div<SectionProps>`
+export const Section = Styled.div<SectionProps>`
 position: absolute;
 top: 0;
 bottom: 0;
