@@ -1,5 +1,4 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
 import Styled, { keyframes } from 'styled-components'
 import { values } from '../../lib'
 import Button from './Button'
@@ -172,9 +171,6 @@ const Header = ({}: HeaderProps) => {
                     </MobileRight>
                 </div>
             </Container>
-            <div style={{ overflow: 'hidden' }}>
-                <Outlet />
-            </div>
         </div>
     )
 }
