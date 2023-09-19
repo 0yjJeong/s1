@@ -1,14 +1,15 @@
 import React from 'react'
 import { useTheme } from 'styled-components'
+import { isMobile } from 'react-device-detect'
 import { SectionProps } from '../../types'
-import { Section, Wrapper, Scaffolding, Text } from '../../components/common'
-import { Market, Message, Mobile, Block } from '../../components/ad'
+import { Wrapper, Scaffolding, Text } from '../../components/common'
+import { Market, Markets, Message, Mobile, Block } from '../../components/ad'
 
 export default function Section5({ inView }: SectionProps) {
     const { color } = useTheme()
 
     const style: React.CSSProperties = {
-        bottom: '30%',
+        bottom: isMobile ? '10%' : '40%',
         left: '-30%',
         right: '-30%',
         background: color['orange03'],
@@ -29,11 +30,12 @@ export default function Section5({ inView }: SectionProps) {
                         </div>
                         <div className="text">
                             <Text
-                                title="에스원은 오늘도 108만 고객처와 함께합니다"
-                                subTitle="※점유율(한국갤럽 2022년 12월, 월서비스료 기준, 시스템경비 가입고객 총 13,800개 샘플조사,신뢰수준 95% 표본오차±0.83%p)"
+                                title="언제 어디서나 에스원과 함께하세요"
+                                subTitle="에스원 고객센터 모바일앱과 함께"
                                 type="orange"
+                                styles="flex-direction: column-reverse;"
                             />
-                            <div style={{ display: 'flex', gap: '2rem' }}>
+                            <Markets>
                                 <Market
                                     icon="resource/app-store-icon.svg"
                                     store="resource/app-store.svg"
@@ -44,7 +46,7 @@ export default function Section5({ inView }: SectionProps) {
                                     store="resource/google-store.svg"
                                     text="resource/google-store-text.svg"
                                 />
-                            </div>
+                            </Markets>
                             <Message>
                                 <div>
                                     당신의 안전과 평화를 우리와 함께하세요! <br />

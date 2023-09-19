@@ -20,10 +20,24 @@ const Block = Styled.button`
         background: ${(props) => props.theme.color['orange03']};
         border: 1px solid white;
     }
+
+    @media (max-width: ${(props) => props.theme.windowSize['mobile']}px) {
+        gap: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        min-width: 135px;
+        max-width: 135px;
+    }
 `
 
 const Left = Styled.div`
     display: flex;
+
+    @media (max-width: ${(props) => props.theme.windowSize['mobile']}px) {
+        img {
+            width: 20px;
+        }
+    }
 `
 
 const Right = Styled.div`
@@ -35,6 +49,16 @@ const Right = Styled.div`
     img:first-child {
         height: 12px;
         display: inherit;
+    }
+
+    @media (max-width: ${(props) => props.theme.windowSize['mobile']}px) {
+        img:first-child {
+            height: 9px;
+        }
+
+        img:last-child {
+            height: 12px;
+        }
     }
 `
 

@@ -53,6 +53,12 @@ const Top = Styled.section`
                 display: none;
             }
 
+            ul {
+                li {
+                    font-size: ${(props) => props.theme.fontSize['xs']};
+                }
+            }
+
             div {
                 a {
                     img {
@@ -133,7 +139,7 @@ const Bottom = Styled.section`
 
                 li {
                     a {
-                        font-size: ${(props) => props.theme.fontSize['base']};
+                        font-size: ${(props) => props.theme.fontSize['sm']};
                     }
                 }
             }

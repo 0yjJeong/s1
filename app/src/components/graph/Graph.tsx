@@ -44,6 +44,11 @@ const Bars = Styled.div`
         position: relative;
         min-width: 80px;
     }
+
+    @media (max-width: ${(props) => props.theme.windowSize['tablet']}px) {
+        padding: 0;
+        padding-bottom: 100px;
+    }
 `
 
 export default Graph

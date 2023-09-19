@@ -18,6 +18,10 @@ const Container = Styled.div`
             background-image: url(resource/grid.png);
             background-size: contain;
         }
+
+        @media (max-width: ${(props) => props.theme.windowSize['tablet']}px) {
+            display: none;
+        }
     }
 
     img {
